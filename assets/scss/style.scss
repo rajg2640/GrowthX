@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+$grid-gutter-width: 2rem;
 @import "../bootstrap/scss/bootstrap";
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/variables";
@@ -108,4 +109,60 @@ h4{
   font-weight: 700;
   font-family: $poppins;
   color: $primary;
+}
+
+// FOOTER
+footer{
+  padding-top: 68px;
+  background-color: $primary;
+  *{
+    color: $white;
+  }
+  .desc{
+    max-width: 431px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 16px 0 24px;
+  }
+  .social-icons{
+    img{
+      margin-right: 24px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .main-footer{
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba($white, 0.28);;
+  }
+  .links-wrapper{
+    max-width: 365px;
+    width: 100%;
+    margin-left: auto;
+    h5{
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+    p{
+      display: flex;
+    }
+    a{
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .copyright-footer{
+    padding: 16px;
+    p{
+      font-size: 14px;
+      span{
+        font-size: 16px;
+      }
+    }
+  }
 }
