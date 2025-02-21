@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,64 +8,209 @@
     <link rel="stylesheet" href="assets/scss/style.css">
     <link rel="stylesheet" href="assets/scss/responsive.css">
 </head>
+
 <body>
+    <!-- Header -->
     <header>
-        <div class="container"><p>Header</p></div>
-        <div class="btn btn-primary"><img src="assets/image/svg/check.svg" alt="">Join now</div>
-        <h1 class="lg-heading">Hello</h1>
-        <h2 class="md-heading">Hello</h2>
-    </header>
-    <footer>
-        <div class="main-footer">
+        <div class="header-wrapper">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <img src="assets/image/svg/white-logo.svg" alt="" class="footer-logo">
-                        <p class="desc">I help you become a top 1% growth expert with my one-stop shop for actionable marketing, product, and sales strategies proven in startups and corporations.</p>
-                        <div class="social-icons d-flex align-items-center">
-                            <img src="/assets/image/svg/twitter-white.svg" alt="">
-                            <img src="/assets/image/svg/thread-white.svg" alt="">
-                            <img src="/assets/image/svg/linkedin-white.svg" alt="">
-                            <img src="/assets/image/svg/instagram-white.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="links-wrapper d-flex justify-content-between">
-                            <div class="flex-fill">
-                                <h5>Strategies</h5>
-                                <p>
-                                    <a href="">Awareness</a>
-                                </p>
-                                <p>
-                                    <a href="">Conversion</a>
-                                </p>
-                                <p>
-                                    <a href="">Retention</a>
-                                </p>
-                                <p>
-                                    <a href="">Beyond</a>
-                                </p>
+                <div class="wrapper">
+                    <a href="#" class="logo-wrap">
+                        <img src="assets/image/svg/logo.svg" alt="">
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">About me</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li>
+                                <div class="social-links">
+                                    <a href="#">
+                                        <img src="assets/image/svg/twitter.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/image/svg/thread.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/image/svg/linkedin.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/image/svg/instagram.svg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner Section -->
+        <div class="banner-section">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-8">
+                        <h1>The Only Growth <br /> Playbook You’ll Ever Need.</h1>
+                        <h5>Join Now for 100% Actionable <span>Marketing, Product,</span> and <span>Sales
+                                Strategies</span> Proven in Startups & Corporates.</h5>
+                        <form action="" method="get">
+                            <div class="form-wrapper">
+                                <div class="form-group">
+                                    <input type="email" placeholder="Your Email">
+                                </div>
+                                <button type="submit" class="btn btn-primary"><img src="assets/image/svg/check.svg"
+                                        alt="">Join now</button>
                             </div>
-                            <div>
-                                <h5>Personal</h5>
-                                <p>
-                                    <a href="">About me</a>
-                                </p>
-                                <p>
-                                    <a href="">Contact</a>
-                                </p>
-                                <p>
-                                    <a href="">Terms & Conditions</a>
-                                </p>
+                        </form>
+                        <div class="newsletter-desc">
+                            <div class="image-wrapper">
+                                <img src="assets/image/svg/mail-star.svg" alt="">
                             </div>
+                            <p>A monthly newsletter (no inbox overload, I hate it too!)</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright-footer">
-            <p class="mb-0 text-center"><span>&#169;</span>All rights reserved by GrowthX Decoded™, 2025.</p>
+
+        <!-- Leading Companies Section -->
+        <div class="leading-company-main">
+            <div class="container">
+                <div class="chip">
+                    <div>
+                        <img src="assets/image/svg/users-circle.svg" alt="">
+                    </div>
+                    <p>Join 6,000+ Growth Experts from Leading Companies Like</p>
+                </div>
+                <div class="compnies-main">
+                    <div class="single-company">
+                        <img src="assets/image/svg/dropbox.svg" alt="">
+                    </div>
+                    <div class="single-company">
+                        <img src="assets/image/svg/netfilx.svg" alt="">
+                    </div>
+                    <div class="single-company">
+                        <img src="assets/image/svg/redbull.svg" alt="">
+                    </div>
+                    <div class="single-company">
+                        <img src="assets/image/svg/wise.svg" alt="">
+                    </div>
+                    <div class="single-company">
+                        <img src="assets/image/svg/hbo.svg" alt="">
+                    </div>
+                    <div class="single-company">
+                        <img src="assets/image/svg/adidas.svg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+
+        <!-- Growth Hub Section -->
+        <div class="growth-hub-main">
+            <div class="container">
+                <h3>Growth Hub</h3>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="Awareness-tab" data-bs-toggle="tab" data-bs-target="#Awareness" type="button" role="tab" aria-controls="Awareness" aria-selected="true">Awareness</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="conversion-tab" data-bs-toggle="tab" data-bs-target="#conversion" type="button" role="tab" aria-controls="conversion" aria-selected="false">conversion</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="retention-tab" data-bs-toggle="tab" data-bs-target="#retention" type="button" role="tab" aria-controls="retention" aria-selected="false">retention</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="beyond-tab" data-bs-toggle="tab" data-bs-target="#beyond" type="button" role="tab" aria-controls="beyon" aria-selected="false">beyond</button>
+                    </li>
+                </ul>
+
+                <div class="tags-row">
+                    <div class="tag">Sales</div>
+                    <div class="tag">Ads</div>
+                    <div class="tag">Social</div>
+                    <div class="tag">MVP</div>
+                    <div class="tag">Cold mailing</div>
+                </div>
+
+                <div class="tab-content mt-3" id="myTabContent">
+                    <div class="tab-pane fade show active" id="Awareness" role="tabpanel" aria-labelledby="Awareness-tab">
+                        <p>Welcome to the Awareness section.</p>
+                    </div>
+                    <div class="tab-pane fade" id="conversion" role="tabpanel" aria-labelledby="conversion-tab">
+                        <p>This is the conversion section.</p>
+                    </div>
+                    <div class="tab-pane fade" id="retention" role="tabpanel" aria-labelledby="retention-tab">
+                        <p>retention us in this section.</p>
+                    </div>
+                    <div class="tab-pane fade" id="beyond" role="tabpanel" aria-labelledby="beyond-tab">
+                        <p>beyond us in this section.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="assets/image/svg/white-logo.svg" alt="" class="footer-logo">
+                            <p class="desc">I help you become a top 1% growth expert with my one-stop shop for actionable marketing, product, and sales strategies proven in startups and corporations.</p>
+                            <div class="social-icons d-flex align-items-center">
+                                <img src="/assets/image/svg/twitter-white.svg" alt="">
+                                <img src="/assets/image/svg/thread-white.svg" alt="">
+                                <img src="/assets/image/svg/linkedin-white.svg" alt="">
+                                <img src="/assets/image/svg/instagram-white.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="links-wrapper d-flex justify-content-between">
+                                <div class="flex-fill">
+                                    <h5>Strategies</h5>
+                                    <p>
+                                        <a href="">Awareness</a>
+                                    </p>
+                                    <p>
+                                        <a href="">Conversion</a>
+                                    </p>
+                                    <p>
+                                        <a href="">Retention</a>
+                                    </p>
+                                    <p>
+                                        <a href="">Beyond</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5>Personal</h5>
+                                    <p>
+                                        <a href="">About me</a>
+                                    </p>
+                                    <p>
+                                        <a href="">Contact</a>
+                                    </p>
+                                    <p>
+                                        <a href="">Terms & Conditions</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-footer">
+                <p class="mb-0 text-center"><span>&#169;</span>All rights reserved by GrowthX Decoded™, 2025.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
