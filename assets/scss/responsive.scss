@@ -1,42 +1,155 @@
-$gray-100: #c2c3cf;
+$white: #ffffff;
+$primary: #1d0a5b;
+$light-gray-100: #edecf0;
+
 
 @media screen and (min-width: 1400px) {
-  
 }
 
 @media screen and (max-width: 1440px) {
- 
 }
 
 @media screen and (max-width: 1199px) {
-  
+  .leading-company-main{
+    .compnies-main{
+      gap: 75px;
+    }
+  }
+  .growth-hub-main{
+    .nav-tabs{
+      gap: 40px;
+      .nav-item{
+        .nav-link{
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+    }
+    .tags-row{
+      .tag{
+        font-size: 17px;
+        line-height: 24px;
+      }
+    }
+    .tab-content{
+      .single-card{
+        .content{
+          p{
+            font-size: 22px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  
 }
 
 @media screen and (max-width: 991px) {
- 
+  h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .growth-hub-main{
+    padding: 50px 0;
+  }
+  header {
+    .header-wrapper {
+      .wrapper {
+        nav {
+          ul {
+            gap: 35px;
+            li {
+              a {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .leading-company-main{
+    .compnies-main{
+      gap: 50px;
+    }
+    .chip{
+      p{
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
-  footer{
-    .desc{
+  h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  header {
+    height: 74px;
+    .header-wrapper {
+      padding: 16px 0 15px;
+      .logo-wrap {
+        max-height: 26px;
+        max-width: 61px;
+      }
+    }
+  }
+  .banner-section {
+    padding: 32px 0;
+    h5 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+  .growth-hub-main {
+    .tab-content {
+      .single-card {
+        border-radius: 8px;
+        .content {
+          p {
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+      .btn-wrapper{
+        margin: 38px -16px 0;
+      }
+    }
+  }
+  .leading-company-main{
+    .compnies-main{
+      gap: 30px;
+    }
+  }
+  footer {
+    .desc {
       font-size: 16px;
     }
     .links-wrapper {
       max-width: 100%;
       margin-top: 32px;
-      a{
+      a {
         font-size: 16px;
       }
-      h5{
+      h5 {
         font-size: 20px;
         font-weight: 500;
         margin-bottom: 8px;
       }
-      p{
+      p {
         margin-bottom: 12px;
       }
     }
@@ -44,39 +157,182 @@ $gray-100: #c2c3cf;
 }
 
 @media screen and (max-width: 575px) {
-  footer{
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .form-group{
+    input{
+      padding: 7px 16px;
+    }
+  }
+  .btn{
+    &.btn-primary{
+      padding: 9px 11px;
+      img{
+        max-width: 16px;
+        max-height: 16px;
+      }
+    }
+    &.btn-outline-primary{
+      font-size: 14px;
+      line-height: 20px;
+      padding: 7px 15px;
+      img{
+        max-width: 20px;
+        max-height: 20px;
+      }
+    }
+  }
+  header {
+    height: 58px;
+    .header-wrapper {
+      .wrapper {
+        nav {
+          ul {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            transform: translateX(110%);
+            background-color: $white;
+            z-index: 999;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            width: 100%;
+            max-width: 276px;
+            padding: 16px;
+            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            &.open {
+              transform: translateX(0);
+            }
+            li {
+              width: 100%;
+              .social-links {
+                background-color: transparent;
+                width: 100%;
+                padding: 0;
+                gap: 28px;
+                a {
+                  background-color: rgba($primary, 4%);
+                  padding: 8px;
+                  border-radius: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner-section {
+    padding: 32px 0;
+    h5 {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 8px 0 24px;
+    }
+  }
+  .leading-company-main{
+    margin-top: 22px;
+    padding-bottom: 16px;
+    .compnies-main{
+      gap: 17px;
+      margin: 0;
+    }
+    .chip{
+      padding: 5px 12px;
+      max-width: 283px;
+      img{
+        display: none;
+      }
+      p{
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  .growth-hub-main{
+    padding: 40px 0 22px;
+    .nav-tab-wrapper{
+      margin: 0 -16px;
+      padding-left: 16px;
+    }
+    .line{
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 100%;
+        height: 1px;
+        width: 16px;
+        background-color: $light-gray-100;
+      }
+    }
+    .nav-tabs{
+      margin-top: 4px;
+      gap: 19px;
+      .nav-item{
+        .nav-link{
+          font-size: 16px;
+          line-height: 30px;
+          padding: 4px 0;
+        }
+      }
+    }
+    .tags-row{
+      margin: 12px 0 20px;
+      .tag{
+        font-size: 14px;
+        padding: 3px 11px;
+        line-height: 20px;
+      }
+    }
+    .tab-content{
+      .single-card{
+        max-height: 200px;
+        .content{
+          padding: 16px;
+        }
+      }
+    }
+  }
+  footer {
     padding-top: 32px;
-    .main-footer{
+    .main-footer {
       padding-bottom: 12px;
     }
-    .desc{
+    .desc {
       margin: 12px 0 16px;
       font-size: 14px;
       line-height: 20px;
     }
     .links-wrapper {
-      h5{
+      h5 {
         font-size: 16px;
         line-height: 28px;
       }
-      a{
+      a {
         font-size: 14px;
         line-height: 20px;
       }
     }
-    .social-icons{
-      img{
+    .social-icons {
+      img {
         height: 24px;
         width: 24px;
         margin-right: 16px;
       }
     }
-    .footer-logo{
+    .footer-logo {
       height: 32px;
       width: auto;
     }
-    .copyright-footer{
-      p{
+    .copyright-footer {
+      p {
         font-size: 12px;
         line-height: 18px;
       }
@@ -85,5 +341,4 @@ $gray-100: #c2c3cf;
 }
 
 @media screen and (max-width: 475px) {
-  
 }
