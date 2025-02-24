@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 // $grid-gutter-width: 2rem;
+$text-muted: #B3B3B3;
 @import "../bootstrap/scss/bootstrap";
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/variables";
@@ -13,6 +14,8 @@ $light-gray: #e3e3e3;
 $light-gray-50: #f5f5f5;
 $light-gray-100: #edecf0;
 $light-gray-200: #EAEAEA;
+$light-gray-300: #B3B3B3;
+$light-gray-400: #999999;
 $dark-gray: #343437;
 $poppins: "Poppins", serif;
 $inter: "Inter", serif;
@@ -144,7 +147,7 @@ a{
 // Input
 .form-group {
   width: 100%;
-  input {
+  input, textarea {
     padding: 13px 16px;
     border: 1px solid $light-gray;
     border-radius: 8px;
@@ -157,6 +160,9 @@ a{
     &:focus-visible {
       outline: 0;
       border-color: $primary;
+    }
+    &:focus{
+      box-shadow: none;
     }
     &:hover {
       border-color: $primary;
@@ -468,6 +474,7 @@ footer{
     }
     p{
       display: flex;
+      margin-bottom: 16px;
     }
     a{
       text-decoration: none;
@@ -486,6 +493,100 @@ footer{
   }
 }
 
+// ABOUT US
+.breadcumb{
+  .text-disable{
+    color: $light-gray-300;
+  }
+}
+.about-section{
+  padding: 40px 0 80px;
+  .details{
+    p{
+      font-size: 18px;
+      line-height: 32px;
+      color: $black;
+      margin-bottom: 30px;
+      span{
+        font-weight: 500;
+      }
+    }
+  }
+  .lg-heading{
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 24px;
+    margin-top: 8px
+  }
+  .company-details{
+    max-width: 280px;
+    width: 100%;
+    flex: none;
+    margin-left: 48px;
+    .profile{
+      border-radius: 12px 12px 0 0;
+      height: 260px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .profile-summary{
+      border: 1px solid $light-gray-200;
+      border-top: 0;
+      padding: 16px;
+      border-radius: 0 0 12px 12px;
+      h5{
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 26px;
+        color: $light-gray-400;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      h6{
+        line-height: 22px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 12px;
+        color: $gray;
+      }
+      a{
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        color: $primary;
+      }
+    }
+  }
+}
+.collaborate-form{
+  padding: 24px 32px;
+  border: 1px solid $light-gray-200;
+  border-radius: 24px;
+  .mail-icon{
+    height: 40px;
+    width: auto;
+    margin-bottom: 12px;
+  }
+  h4{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  textarea{
+    height: 120px;
+    line-height: 24px;
+    resize: none;
+  }
+  .btn-primary{
+    min-width: 164px;
+  }
+}
 
 
 // Animation

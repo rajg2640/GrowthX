@@ -42,6 +42,18 @@ $light-gray-100: #edecf0;
       }
     }
   }
+  .about-section{
+    .details{
+      p{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    } 
+    .lg-heading{
+      font-size: 44px;
+      line-height: 48px;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -154,6 +166,39 @@ $light-gray-100: #edecf0;
       }
     }
   }
+  .about-section{
+    .lg-heading{
+      font-size: 30px;
+      line-height: 38px;
+    }
+    .company-details{
+      margin-left: auto;
+      margin-right: auto;
+      .profile{
+        height: 240px;
+        object-position: top;
+      }
+    }
+    .details{
+      p{
+        margin-bottom: 24px;
+        letter-spacing: 0.02px;
+      }
+    }
+  }
+  .about-content{
+    flex-direction: column;
+  }
+  .collaborate-form{
+    border-radius: 12px;
+    textarea{
+      height: 100px;
+    }
+    .btn-primary{
+      width: 100%;
+      margin-top: 18px;
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -167,6 +212,7 @@ $light-gray-100: #edecf0;
     }
   }
   .btn{
+    gap: 4px;
     &.btn-primary{
       padding: 9px 11px;
       img{
@@ -338,7 +384,65 @@ $light-gray-100: #edecf0;
       }
     }
   }
+  .about-section{
+    padding: 16px 0 40px;
+    .lg-heading{
+      font-size: 20px;
+      line-height: 32px;
+      margin: 4px 0 8px;
+    }
+  }
+  .breadcumb{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .collaborate-form{
+    padding: 16px;  
+    .mail-icon{
+      height: 24px;
+      margin-bottom: 8px;
+    }
+    h4{
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+    .btn.btn-primary{
+      gap: 8px;
+      padding: 9px 19.5px;
+      img{
+        height: 20px;
+        width: 20px;
+        max-height: 20px;
+        max-width: 20px;
+      }
+    }
+  }
+  .form-group{
+    input, textarea{
+      padding: 8.5px 16px;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+  }
 }
 
 @media screen and (max-width: 475px) {
+  .about-section{
+    .company-details{
+      max-width: 100%;
+      .profile-summary{
+        h5{
+          font-size: 12px;
+          img{
+            height: 12px;
+            width: 12px;
+          }
+          span{
+            line-height: 12px;
+          }
+        }
+      } 
+    }
+  }
 }
