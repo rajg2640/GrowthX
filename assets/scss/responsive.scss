@@ -2,7 +2,6 @@ $white: #ffffff;
 $primary: #1d0a5b;
 $light-gray-100: #edecf0;
 
-
 @media screen and (min-width: 1400px) {
 }
 
@@ -10,46 +9,44 @@ $light-gray-100: #edecf0;
 }
 
 @media screen and (max-width: 1199px) {
-  .leading-company-main{
-    .compnies-main{
+  .leading-company-main {
+    .compnies-main {
       gap: 75px;
     }
   }
-  .growth-hub-main{
-    .nav-tabs{
+  .growth-hub-main {
+    .nav-tabs {
       gap: 40px;
-      .nav-item{
-        .nav-link{
+      .nav-item {
+        .nav-link {
           font-size: 20px;
           line-height: 26px;
         }
       }
     }
-    .tags-row{
-      .tag{
+    .tags-row {
+      .tag {
         font-size: 17px;
         line-height: 24px;
       }
     }
-    .tab-content{
-      .single-card{
-        .content{
-          p{
-            font-size: 22px;
-            line-height: 26px;
-          }
-        }
+  }
+  .single-card {
+    .content {
+      a {
+        font-size: 22px;
+        line-height: 26px;
       }
     }
   }
-  .about-section{
-    .details{
-      p{
+  .about-section {
+    .details {
+      p {
         font-size: 16px;
         line-height: 24px;
       }
-    } 
-    .lg-heading{
+    }
+    .lg-heading {
       font-size: 44px;
       line-height: 48px;
     }
@@ -68,7 +65,7 @@ $light-gray-100: #edecf0;
     font-size: 30px;
     line-height: 36px;
   }
-  .growth-hub-main{
+  .growth-hub-main {
     padding: 50px 0;
   }
   header {
@@ -87,12 +84,12 @@ $light-gray-100: #edecf0;
       }
     }
   }
-  .leading-company-main{
-    .compnies-main{
+  .leading-company-main {
+    .compnies-main {
       gap: 50px;
     }
-    .chip{
-      p{
+    .chip {
+      p {
         font-size: 16px;
       }
     }
@@ -118,6 +115,15 @@ $light-gray-100: #edecf0;
       }
     }
   }
+  .single-card {
+    border-radius: 8px;
+    .content {
+      a {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
   .banner-section {
     padding: 32px 0;
     h5 {
@@ -127,22 +133,13 @@ $light-gray-100: #edecf0;
   }
   .growth-hub-main {
     .tab-content {
-      .single-card {
-        border-radius: 8px;
-        .content {
-          p {
-            font-size: 18px;
-            line-height: 22px;
-          }
-        }
-      }
-      .btn-wrapper{
+      .btn-wrapper {
         margin: 38px -16px 0;
       }
     }
   }
-  .leading-company-main{
-    .compnies-main{
+  .leading-company-main {
+    .compnies-main {
       gap: 30px;
     }
   }
@@ -166,37 +163,47 @@ $light-gray-100: #edecf0;
       }
     }
   }
-  .about-section{
-    .lg-heading{
+  .about-section {
+    .lg-heading {
       font-size: 30px;
       line-height: 38px;
     }
-    .company-details{
+    .company-details {
       margin-left: auto;
       margin-right: auto;
-      .profile{
+      .profile {
         height: 240px;
         object-position: top;
       }
     }
-    .details{
-      p{
+    .details {
+      p {
         margin-bottom: 24px;
         letter-spacing: 0.02px;
       }
     }
   }
-  .about-content{
+  .about-content {
     flex-direction: column;
   }
-  .collaborate-form{
+  .collaborate-form {
     border-radius: 12px;
-    textarea{
+    textarea {
       height: 100px;
     }
-    .btn-primary{
+    .btn-primary {
       width: 100%;
       margin-top: 18px;
+    }
+  }
+  .modal{
+    .modal-content{
+      min-height: 450px;
+    }
+    .modal-body{
+      h4{
+        max-width: 100%;
+      }
     }
   }
 }
@@ -206,25 +213,25 @@ $light-gray-100: #edecf0;
     font-size: 24px;
     line-height: 36px;
   }
-  .form-group{
-    input{
+  .form-group {
+    input {
       padding: 7px 16px;
     }
   }
-  .btn{
+  .btn {
     gap: 4px;
-    &.btn-primary{
+    &.btn-primary {
       padding: 9px 11px;
-      img{
+      img {
         max-width: 16px;
         max-height: 16px;
       }
     }
-    &.btn-outline-primary{
+    &.btn-outline-primary {
       font-size: 14px;
       line-height: 20px;
       padding: 7px 15px;
-      img{
+      img {
         max-width: 20px;
         max-height: 20px;
       }
@@ -249,10 +256,13 @@ $light-gray-100: #edecf0;
             width: 100%;
             max-width: 276px;
             padding: 16px;
-            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease-in-out;
             &.open {
               transform: translateX(0);
+              & + .overlay {
+                opacity: 1;
+                visibility: visible;
+              }
             }
             li {
               width: 100%;
@@ -280,35 +290,38 @@ $light-gray-100: #edecf0;
       line-height: 24px;
       margin: 8px 0 24px;
     }
+    .form-wrapper {
+      gap: 8px;
+    }
   }
-  .leading-company-main{
+  .leading-company-main {
     margin-top: 22px;
     padding-bottom: 16px;
-    .compnies-main{
+    .compnies-main {
       gap: 17px;
       margin: 0;
     }
-    .chip{
+    .chip {
       padding: 5px 12px;
       max-width: 283px;
-      img{
+      img {
         display: none;
       }
-      p{
+      p {
         font-size: 12px;
         line-height: 16px;
       }
     }
   }
-  .growth-hub-main{
+  .growth-hub-main {
     padding: 40px 0 22px;
-    .nav-tab-wrapper{
+    .nav-tab-wrapper {
       margin: 0 -16px;
       padding-left: 16px;
     }
-    .line{
+    .line {
       position: relative;
-      &::before{
+      &::before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -318,32 +331,30 @@ $light-gray-100: #edecf0;
         background-color: $light-gray-100;
       }
     }
-    .nav-tabs{
+    .nav-tabs {
       margin-top: 4px;
       gap: 19px;
-      .nav-item{
-        .nav-link{
+      .nav-item {
+        .nav-link {
           font-size: 16px;
           line-height: 30px;
           padding: 4px 0;
         }
       }
     }
-    .tags-row{
+    .tags-row {
       margin: 12px 0 20px;
-      .tag{
+      .tag {
         font-size: 14px;
         padding: 3px 11px;
         line-height: 20px;
       }
     }
-    .tab-content{
-      .single-card{
-        max-height: 200px;
-        .content{
-          padding: 16px;
-        }
-      }
+  }
+  .single-card {
+    max-height: 200px;
+    .content {
+      padding: 16px;
     }
   }
   footer {
@@ -367,7 +378,7 @@ $light-gray-100: #edecf0;
       }
     }
     .social-icons {
-      img {
+      a {
         height: 24px;
         width: 24px;
         margin-right: 16px;
@@ -384,33 +395,33 @@ $light-gray-100: #edecf0;
       }
     }
   }
-  .about-section{
+  .about-section {
     padding: 16px 0 40px;
-    .lg-heading{
+    .lg-heading {
       font-size: 20px;
       line-height: 32px;
       margin: 4px 0 8px;
     }
   }
-  .breadcumb{
+  .breadcumb {
     font-size: 14px;
     line-height: 20px;
   }
-  .collaborate-form{
-    padding: 16px;  
-    .mail-icon{
+  .collaborate-form {
+    padding: 16px;
+    .mail-icon {
       height: 24px;
       margin-bottom: 8px;
     }
-    h4{
+    h4 {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 12px;
     }
-    .btn.btn-primary{
+    .btn.btn-primary {
       gap: 8px;
       padding: 9px 19.5px;
-      img{
+      img {
         height: 20px;
         width: 20px;
         max-height: 20px;
@@ -418,31 +429,113 @@ $light-gray-100: #edecf0;
       }
     }
   }
-  .form-group{
-    input, textarea{
+  .form-group {
+    input,
+    textarea {
       padding: 8.5px 16px;
       font-size: 14px;
       border-radius: 6px;
     }
   }
+  .modal{
+    .modal-content{
+      border-radius: 12px;
+      min-height: 280px;
+    }
+    .modal-body{
+      padding: 16px;
+      .close-btn{
+        top: 16px;
+        right: 16px;
+      }
+      .modal-head-icon{
+        max-width: 24px;
+        max-height: 24px;
+      }
+      h4{
+        font-size: 18px;
+        line-height: 24px;
+      }
+      ul{
+        margin: 18px 0 16px;
+        li{
+          margin-bottom: 14px;
+          p{
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+      form{
+        .form-group{
+          input{
+            padding: 14.5px;
+          }
+        }
+        .btn{
+          &.btn-primary{
+            padding: 11px;
+            font-size: 16px;
+            line-height: 24px;
+            img{
+              max-width: 24px;
+              max-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .modal-footer{
+      margin-top: 24px;
+      .leading-company-main{
+        padding: 0 16px 16px;
+        .chip{
+          padding: 5px 11px;
+          max-width: 90%;
+        }
+        .compnies-main{
+          gap: 30px;
+          margin: -10px auto 0;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 475px) {
-  .about-section{
-    .company-details{
+  .about-section {
+    .company-details {
       max-width: 100%;
-      .profile-summary{
-        h5{
+      .profile-summary {
+        h5 {
           font-size: 12px;
-          img{
+          img {
             height: 12px;
             width: 12px;
           }
-          span{
+          span {
             line-height: 12px;
           }
         }
-      } 
+      }
+    }
+  }
+  .modal{
+    .modal-body{
+      .success-box{
+        width: calc(100% - 36px);
+        h5{
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+    }
+    .modal-footer{
+      .leading-company-main{
+        .compnies-main{
+          gap: 18px;
+        }
+      }
     }
   }
 }
